@@ -1,56 +1,48 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
-      <div class="d-flex align-center">
+    <v-app-bar
+      app
+      color="black"
+      dark
+      prominent
+      src="https://picsum.photos/1920/1080?random&grayscale"
+      shrink-on-scroll
+      scroll-target="#scrolling"
+    >
+      <template v-slot:img="{ props }">
         <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
-
+          v-bind="props"
+          gradient="to top right, rgba(19,84,122,.5), rgba(128,208,199,.8)"
+        ></v-img>
+      </template>
+      <v-toolbar-title>nishitaku's portfolio</v-toolbar-title>
       <v-spacer></v-spacer>
 
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
+      <v-btn icon>
+        <v-icon>mdi-magnify</v-icon>
       </v-btn>
-    </v-app-bar>
 
+      <template v-slot:extension>
+        <v-tabs grow background-color="transparent">
+          <v-tab to="/about">About</v-tab>
+          <v-tab to="/works">Works</v-tab>
+          <v-tab to="/skills">Skills</v-tab>
+          <v-tab to="/test">Test</v-tab>
+        </v-tabs>
+      </template>
+    </v-app-bar>
     <v-content>
-      <HelloWorld />
+      <v-sheet id="scrolling" class="overflow-y-auto" max-height="100vh">
+        <router-view></router-view>
+      </v-sheet>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
-
 export default {
-  name: "App",
-
-  components: {
-    HelloWorld
-  },
-
-  data: () => ({
-    //
-  })
+  name: "App"
 };
 </script>
+
+<style></style>

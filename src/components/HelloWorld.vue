@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container fluid>
     <v-layout text-center wrap>
       <v-flex xs12>
         <v-img
@@ -55,6 +55,66 @@
         </v-layout>
       </v-flex>
 
+      <v-flex xs12 mb-5>
+        <h2 class="headline font-weight-bold mb-3">Ecosystem</h2>
+
+        <v-layout justify-center>
+          <a
+            v-for="(eco, i) in ecosystem"
+            :key="i"
+            :href="eco.href"
+            class="subheading mx-3"
+            target="_blank"
+          >
+            {{ eco.text }}
+          </a>
+        </v-layout>
+      </v-flex>
+      <v-flex xs12 mb-5>
+        <h2 class="headline font-weight-bold mb-3">Ecosystem</h2>
+
+        <v-layout justify-center>
+          <a
+            v-for="(eco, i) in ecosystem"
+            :key="i"
+            :href="eco.href"
+            class="subheading mx-3"
+            target="_blank"
+          >
+            {{ eco.text }}
+          </a>
+        </v-layout>
+      </v-flex>
+      <v-flex xs12 mb-5>
+        <h2 class="headline font-weight-bold mb-3">Ecosystem</h2>
+
+        <v-layout justify-center>
+          <a
+            v-for="(eco, i) in ecosystem"
+            :key="i"
+            :href="eco.href"
+            class="subheading mx-3"
+            target="_blank"
+          >
+            {{ eco.text }}
+          </a>
+        </v-layout>
+      </v-flex>
+      <v-flex xs12 mb-5>
+        <h2 class="headline font-weight-bold mb-3">Ecosystem</h2>
+
+        <v-layout justify-center>
+          <a
+            v-for="(eco, i) in ecosystem"
+            :key="i"
+            :href="eco.href"
+            class="subheading mx-3"
+            target="_blank"
+          >
+            {{ eco.text }}
+          </a>
+        </v-layout>
+      </v-flex>
       <v-flex xs12 mb-5>
         <h2 class="headline font-weight-bold mb-3">Ecosystem</h2>
 
