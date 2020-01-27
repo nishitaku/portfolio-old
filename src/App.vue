@@ -32,7 +32,12 @@
       </template>
     </v-app-bar>
     <v-content>
-      <v-sheet id="scrolling" class="overflow-y-auto" max-height="100vh">
+      <v-sheet
+        id="scrolling"
+        class="overflow-y-auto"
+        max-height="100vh"
+        color="transparent"
+      >
         <router-view></router-view>
       </v-sheet>
     </v-content>
