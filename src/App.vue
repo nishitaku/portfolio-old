@@ -15,10 +15,6 @@
       <v-toolbar-title>nishitaku's portfolio</v-toolbar-title>
       <v-spacer></v-spacer>
 
-      <v-btn icon>
-        <v-icon>mdi-magnify</v-icon>
-      </v-btn>
-
       <template v-slot:extension>
         <v-tabs grow background-color="transparent">
           <v-tab to="/about">About</v-tab>
