@@ -9,6 +9,17 @@
           <v-card-subtitle v-if="isMobile">{{work.span}}</v-card-subtitle>
           <v-card-text v-if="work.summary || work.items || work.techs">
             <p v-if="work.summary">{{work.summary}}</p>
+            <div v-if="work.link">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.swimmy_ss.app.triathlon&hl=ja&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+              >
+                <img
+                  alt="Google Play で手に入れよう"
+                  src="https://play.google.com/intl/ja/badges/static/images/badges/ja_badge_web_generic.png"
+                  width="200"
+                />
+              </a>
+            </div>
             <v-chip-group column v-if="work.techs">
               <v-chip v-for="tech in work.techs" v-bind:key="tech">{{tech}}</v-chip>
             </v-chip-group>
@@ -124,10 +135,10 @@ export default {
           techs: ["LIFF", "Javascript", "Python3", "Flask"]
         },
         {
-          title: "トライアスロンアプリ開発",
+          title: "トライアスロン目標設定アプリ開発",
           span: "2018年11月〜2019年11月",
-          summary:
-            "トライアスロンの予想タイムを算出するiOS/Androidアプリ。設計から開発、リリース作業まで担当",
+          summary: "iOS/Androidアプリ。設計から開発、リリース作業まで担当",
+          link: true,
           techs: ["React Native", "Expo"]
         },
         {
