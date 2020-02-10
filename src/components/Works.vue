@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-switch label="新しい順" v-on:change="works.reverse()"></v-switch>
+    <v-switch label="最近のものから表示" v-on:change="works.reverse()"></v-switch>
     <v-timeline :dense="isMobile">
       <v-timeline-item v-for="work in works" v-bind:key="work.span">
         <span v-if="!isMobile" slot="opposite">{{work.span}}</span>
