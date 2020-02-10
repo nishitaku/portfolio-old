@@ -3,7 +3,6 @@ import VueRouter from "vue-router";
 import About from "../components/About.vue";
 import Skills from "../components/Skills.vue";
 import Works from "../components/Works.vue";
-import HelloWorld from "../components/HelloWorld.vue";
 
 Vue.use(VueRouter);
 
@@ -26,11 +25,6 @@ const routes = [
     path: "/works",
     name: "works",
     component: Works
-  },
-  {
-    path: "/test",
-    name: "test",
-    component: HelloWorld
   }
 ];
 
