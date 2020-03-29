@@ -38,6 +38,12 @@
               <a href="https://qiita.com/nishitaku">nishitaku</a>
             </v-col>
           </v-row>
+          <v-row dense justify="center">
+            <v-col cols="4" class="text-right mr-3">Twitter</v-col>
+            <v-col cols="7" class="text-left ml-3">
+              <a href="https://twitter.com/nishitaku_dev">nishitaku</a>
+            </v-col>
+          </v-row>
         </v-card-text>
       </v-card>
     </v-row>
