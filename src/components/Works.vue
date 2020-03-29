@@ -1,9 +1,6 @@
 <template>
   <v-container>
-    <v-switch
-      label="最近のものから表示"
-      v-on:change="works.reverse()"
-    ></v-switch>
+    <v-switch label="最近のものから表示" v-on:change="works.reverse()"></v-switch>
     <v-timeline :dense="isMobile">
       <v-timeline-item v-for="work in works" v-bind:key="work.span">
         <span v-if="!isMobile" slot="opposite">{{ work.span }}</span>
@@ -24,17 +21,21 @@
               </a>
             </div>
             <v-chip-group column v-if="work.techs">
-              <v-chip v-for="tech in work.techs" v-bind:key="tech">{{
+              <v-chip v-for="tech in work.techs" v-bind:key="tech">
+                {{
                 tech
-              }}</v-chip>
+                }}
+              </v-chip>
             </v-chip-group>
             <ul>
               <li v-for="item in work.items" v-bind:key="item.text">
                 {{ item.text }}
                 <v-chip-group column>
-                  <v-chip v-for="tech in item.techs" v-bind:key="tech">{{
+                  <v-chip v-for="tech in item.techs" v-bind:key="tech">
+                    {{
                     tech
-                  }}</v-chip>
+                    }}
+                  </v-chip>
                 </v-chip-group>
               </li>
             </ul>
@@ -112,14 +113,7 @@ export default {
           span: '2018年7月〜2018年10月',
           summary:
             'Google AssistantからGoogle Driveに保存したファイルを印刷するVUIアプリケーション',
-          techs: [
-            'Directflow',
-            'Actions on Google',
-            'Node.js',
-            'Express',
-            'JavaScript',
-            'MongoDB'
-          ]
+          techs: ['Directflow', 'Actions on Google', 'Express', 'MongoDB']
         },
         {
           title: '脆弱性情報チェックシステム開発',
@@ -153,14 +147,14 @@ export default {
           span: '2019年1月〜2019年6月',
           summary:
             '楽天、Yahoo!ショッピングなどのショッピングサイトの注文情報、在庫情報を管理するWebアプリケーション',
-          techs: ['Angular 7', 'Nest.js', 'MongoDB', 'GCP']
+          techs: ['Angular 7', 'Bulma', 'Nest.js', 'MongoDB', 'GCP', 'Docker']
         },
         {
           title: '木材検査システムGUI開発',
           span: '2019年7月〜2020年2月',
           summary:
             '既存のシステムが保存した木材画像を表示したり、検査シミュレーションするためのWebアプリケーション',
-          techs: ['Angular 8', 'Express', 'MongoDB']
+          techs: ['Angular 8', 'Express', 'MongoDB', 'Docker']
         },
         {
           title: 'カラオケ機器開発',
@@ -172,20 +166,34 @@ export default {
           title: 'カラオケ電源制御アプリGUI開発',
           span: '2019年12月〜2020年1月',
           summary: 'カラオケ機器の電源ON/OFFを管理するWebアプリケーション',
-          techs: ['Vue.js', 'Java']
-        },
-        {
-          title: 'カラオケLINE予約アプリ開発',
-          span: '2020年2月〜2020年3月',
-          summary: 'カラオケ店舗の空室検索、予約するLINEアプリケーション',
-          techs: ['Vue.js', 'LIFF', 'Firebase']
+          techs: ['Vue.js', 'Buetify', 'Java']
         },
         {
           title: 'カードゲームシステム開発',
           span: '2020年1月〜2020年2月',
           summary:
-            'ハッカソン向けに開発。手札と場のシームレスなカード移動を、Firestoreを使って実現',
-          techs: ['React', 'Firebase']
+            '社内ハッカソン向けに開発。手札と場のシームレスなカード移動を、Firestoreを使って実現',
+          techs: ['React', 'Material-UI', 'Firebase']
+        },
+        {
+          title: 'IoTファイル管理システム開発',
+          span: '2020年2月〜2020年3月',
+          summary: 'IoT機器から取得したデータをAWS S3に保存、Webで管理する',
+          techs: ['Angular 9', 'PrimeNG', 'Nest.js', 'S3', 'DynamoDB', 'Nginx']
+        },
+        {
+          title: 'そっくりグランパス開発',
+          span: '2020年2月〜2020年2月',
+          summary:
+            'One Japan Hackathon向けに開発。名古屋グランパスの選手とのそっくり度を判定するLINEアプリ',
+          techs: ['LINE', 'Twilio Functions', 'IBM Cloud', 'Visual Recognition']
+        },
+        {
+          title: 'カラオケLINE予約アプリ開発',
+          span: '2020年1月〜2020年3月',
+          summary:
+            'カラオケ店舗の空室検索、予約するLINEアプリケーション。Sesameによるドア開閉も試作',
+          techs: ['Vue.js', 'Vuetify', 'LIFF', 'Firebase', 'Sesame']
         }
       ]
     };
