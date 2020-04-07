@@ -14,7 +14,9 @@
           </v-row>
           <v-row dense justify="center">
             <v-col cols="4" class="text-right mr-3">University</v-col>
-            <v-col cols="7" class="text-left ml-3">神戸大学大学院工学研究科</v-col>
+            <v-col cols="7" class="text-left ml-3"
+              >神戸大学大学院工学研究科</v-col
+            >
           </v-row>
           <v-row dense justify="center">
             <v-col cols="4" class="text-right mr-3">GitHub</v-col>
