@@ -1,15 +1,37 @@
 <template>
   <v-container>
-    <v-row dense>
-      <v-col cols="12" v-for="cert in certifications" v-bind:key="cert.name">
-        <v-card class="elevation-2">
+    <v-row v-for="skill in skills" v-bind:key="skill.type">
+      <v-col>
+        <v-card>
+          <v-card-title>{{ skill.type }}</v-card-title>
+          <v-card-text>
+            <v-list>
+              <v-list-item v-for="datum in skill.data" v-bind:key="datum.name">
+                <v-list-item-title>{{ datum.name }}</v-list-item-title>
+                <v-rating readonly :value="datum.rating" dense></v-rating>
+              </v-list-item>
+            </v-list>
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col>
+        <v-card>
           <v-card-title>
-            <v-icon large left>mdi-seal</v-icon>
-            <span class="title">{{ cert.name }}</span>
+            <v-icon large left>mdi-seal</v-icon>資格
           </v-card-title>
-          <v-card-subtitle>
-            <span>{{ cert.date }}</span>
-          </v-card-subtitle>
+          <v-card-text>
+            <v-list two-line>
+              <v-list-item v-for="cert in certifications" v-bind:key="cert.name">
+                <v-list-item-content>
+                  <v-list-item-title>{{ cert.name }}</v-list-item-title>
+                  <v-list-item-subtitle></v-list-item-subtitle>
+                  <span>{{ cert.date }}</span>
+                </v-list-item-content>
+              </v-list-item>
+            </v-list>
+          </v-card-text>
         </v-card>
       </v-col>
     </v-row>
@@ -21,6 +43,138 @@ export default {
   name: 'Skills',
   data: function() {
     return {
+      skills: [
+        {
+          type: '言語',
+          data: [
+            {
+              name: 'JavaScript',
+              rating: 5
+            },
+            {
+              name: 'TypeScript',
+              rating: 4
+            },
+            {
+              name: 'Java',
+              rating: 4
+            },
+            {
+              name: 'C/C++',
+              rating: 3
+            },
+            {
+              name: 'Python 3',
+              rating: 3
+            },
+            {
+              name: 'Swift',
+              rating: 1
+            }
+          ]
+        },
+        {
+          type: 'プラットフォーム',
+          data: [
+            {
+              name: 'Web',
+              rating: 4
+            },
+            {
+              name: 'Android',
+              rating: 2
+            },
+            {
+              name: 'iOS',
+              rating: 1
+            }
+          ]
+        },
+        {
+          type: 'フロントエンドフレームワーク',
+          data: [
+            {
+              name: 'Angular',
+              rating: 5
+            },
+            {
+              name: 'Vue.js',
+              rating: 4
+            },
+            {
+              name: 'React',
+              rating: 2
+            }
+          ]
+        },
+        {
+          type: 'Webアプリケーションフレームワーク',
+          data: [
+            {
+              name: 'Express',
+              rating: 4
+            },
+            {
+              name: 'Nest.js',
+              rating: 4
+            },
+            {
+              name: 'Django',
+              rating: 2
+            },
+            {
+              name: 'Flask',
+              rating: 2
+            }
+          ]
+        },
+        {
+          type: 'CSSフレームワーク',
+          data: [
+            {
+              name: 'Vuetify',
+              rating: 4
+            },
+            {
+              name: 'Bulma',
+              rating: 3
+            },
+            {
+              name: 'Buetify',
+              rating: 2
+            },
+            {
+              name: 'Material-UI',
+              rating: 2
+            },
+            {
+              name: 'PrimeNG',
+              rating: 2
+            }
+          ]
+        },
+        {
+          type: 'クラウドサービス',
+          data: [
+            {
+              name: 'Firebase',
+              rating: 4
+            },
+            {
+              name: 'AWS',
+              rating: 3
+            },
+            {
+              name: 'IBM Cloud',
+              rating: 2
+            },
+            {
+              name: 'Twilio',
+              rating: 2
+            }
+          ]
+        }
+      ],
       certifications: [
         {
           name: '応用情報技術者',
