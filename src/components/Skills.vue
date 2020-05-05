@@ -1,40 +1,32 @@
 <template>
   <v-container>
-    <v-row v-for="skill in skills" v-bind:key="skill.type">
-      <v-col>
-        <v-card>
-          <v-card-title>{{ skill.type }}</v-card-title>
-          <v-card-text>
-            <v-list>
-              <v-list-item v-for="datum in skill.data" v-bind:key="datum.name">
-                <v-list-item-title>{{ datum.name }}</v-list-item-title>
-                <v-rating readonly :value="datum.rating" dense></v-rating>
-              </v-list-item>
-            </v-list>
-          </v-card-text>
-        </v-card>
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col>
-        <v-card>
-          <v-card-title>
-            <v-icon large left>mdi-seal</v-icon>資格
-          </v-card-title>
-          <v-card-text>
-            <v-list two-line>
-              <v-list-item v-for="cert in certifications" v-bind:key="cert.name">
-                <v-list-item-content>
-                  <v-list-item-title>{{ cert.name }}</v-list-item-title>
-                  <v-list-item-subtitle></v-list-item-subtitle>
-                  <span>{{ cert.date }}</span>
-                </v-list-item-content>
-              </v-list-item>
-            </v-list>
-          </v-card-text>
-        </v-card>
-      </v-col>
-    </v-row>
+    <v-expansion-panels focusable>
+      <v-expansion-panel v-for="skill in skills" v-bind:key="skill.type">
+        <v-expansion-panel-header color="teal lighten-5">{{ skill.type }}</v-expansion-panel-header>
+        <v-expansion-panel-content>
+          <v-list>
+            <v-list-item v-for="datum in skill.data" v-bind:key="datum.name">
+              <v-list-item-title>{{ datum.name }}</v-list-item-title>
+              <v-rating readonly :value="datum.rating" dense></v-rating>
+            </v-list-item>
+          </v-list>
+        </v-expansion-panel-content>
+      </v-expansion-panel>
+      <v-expansion-panel>
+        <v-expansion-panel-header color="teal lighten-5">資格</v-expansion-panel-header>
+        <v-expansion-panel-content>
+          <v-list two-line>
+            <v-list-item v-for="cert in certifications" v-bind:key="cert.name">
+              <v-list-item-content>
+                <v-list-item-title>{{ cert.name }}</v-list-item-title>
+                <v-list-item-subtitle></v-list-item-subtitle>
+                <span>{{ cert.date }}</span>
+              </v-list-item-content>
+            </v-list-item>
+          </v-list>
+        </v-expansion-panel-content>
+      </v-expansion-panel>
+    </v-expansion-panels>
   </v-container>
 </template>
 
