@@ -10,7 +10,10 @@
       scroll-target="#scrolling"
     >
       <template v-slot:img="{ props }">
-        <v-img v-bind="props" gradient="to top right, rgba(19,84,122,.5), rgba(128,208,199,.8)"></v-img>
+        <v-img
+          v-bind="props"
+          gradient="to top right, rgba(19,84,122,.5), rgba(128,208,199,.8)"
+        ></v-img>
       </template>
       <v-toolbar-title>nishitaku's portfolio</v-toolbar-title>
       <v-spacer></v-spacer>
@@ -25,7 +28,12 @@
       </template>
     </v-app-bar>
     <v-content>
-      <v-sheet id="scrolling" class="overflow-y-auto" max-height="100vh" color="transparent">
+      <v-sheet
+        id="scrolling"
+        class="overflow-y-auto"
+        max-height="100vh"
+        color="transparent"
+      >
         <router-view></router-view>
       </v-sheet>
     </v-content>

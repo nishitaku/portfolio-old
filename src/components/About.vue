@@ -5,7 +5,12 @@
         <v-card>
           <v-card-title>PROFLIE</v-card-title>
           <v-card-text>
-            <v-row dense justify="center" v-for="profile in profiles" v-bind:key="profile.name">
+            <v-row
+              dense
+              justify="center"
+              v-for="profile in profiles"
+              v-bind:key="profile.name"
+            >
               <v-col cols="4" class="text-right mr-3">{{ profile.name }}</v-col>
               <v-col cols="7" class="text-left ml-3">{{ profile.value }}</v-col>
             </v-row>
@@ -34,10 +39,17 @@
           <v-card-title>SPECIALTY</v-card-title>
           <v-card-text>
             <v-list>
-              <v-list-item two-line v-for="specialty in specialties" v-bind:key="specialty.title">
+              <v-list-item
+                two-line
+                v-for="specialty in specialties"
+                v-bind:key="specialty.title"
+              >
                 <v-list-item-content>
                   <v-list-item-title>{{ specialty.title }}</v-list-item-title>
-                  <v-list-item-subtitle class="summary" v-html="specialty.summary"></v-list-item-subtitle>
+                  <v-list-item-subtitle
+                    class="summary"
+                    v-html="specialty.summary"
+                  ></v-list-item-subtitle>
                 </v-list-item-content>
               </v-list-item>
             </v-list>

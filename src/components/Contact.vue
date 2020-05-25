@@ -11,7 +11,11 @@
                   <v-icon>mdi-email</v-icon>
                 </v-list-item-icon>
                 <v-list-item-content>
-                  <v-img src="mail.png" max-width="217px" max-height="21"></v-img>
+                  <v-img
+                    src="mail.png"
+                    max-width="217px"
+                    max-height="21"
+                  ></v-img>
                 </v-list-item-content>
               </v-list-item>
               <v-list-item>
@@ -35,4 +39,3 @@ export default {
   name: 'Contact'
 };
 </script>
-

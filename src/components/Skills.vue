@@ -2,7 +2,9 @@
   <v-container>
     <v-expansion-panels focusable>
       <v-expansion-panel v-for="skill in skills" v-bind:key="skill.type">
-        <v-expansion-panel-header color="teal lighten-5">{{ skill.type }}</v-expansion-panel-header>
+        <v-expansion-panel-header color="teal lighten-5">{{
+          skill.type
+        }}</v-expansion-panel-header>
         <v-expansion-panel-content>
           <v-list>
             <v-list-item v-for="datum in skill.data" v-bind:key="datum.name">
@@ -13,7 +15,9 @@
         </v-expansion-panel-content>
       </v-expansion-panel>
       <v-expansion-panel>
-        <v-expansion-panel-header color="teal lighten-5">資格</v-expansion-panel-header>
+        <v-expansion-panel-header color="teal lighten-5"
+          >資格</v-expansion-panel-header
+        >
         <v-expansion-panel-content>
           <v-list two-line>
             <v-list-item v-for="cert in certifications" v-bind:key="cert.name">
