@@ -193,6 +193,26 @@ export default {
           summary:
             'カラオケ店舗の空室検索、予約するLINEアプリケーション。Sesameによるドア開閉も試作',
           techs: ['Vue.js', 'Vuetify', 'LIFF', 'Firebase', 'Sesame']
+        },
+        {
+          title: 'ノートアプリ開発',
+          span: '2020年4月〜',
+          summary:
+            'iPad向けノートアプリの開発。Web表示機能の開発、DevOps改善、テスト、リファクタリング',
+          techs: [
+            'Swift',
+            'Angular 11',
+            'Angular Material',
+            'Amplify',
+            'CodePipeline'
+          ]
+        },
+        {
+          title: '錠剤検査システムGUI開発',
+          span: '2021年2月〜',
+          summary:
+            '検査装置の保存した画像ファイルを検索したり、検査装置のパラメータを変更するためのWebアプリケーション',
+          techs: ['Angular 11', 'Tailwind CSS', 'Nest.js']
         }
       ]
     };

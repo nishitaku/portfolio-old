@@ -86,7 +86,7 @@ export default {
       specialties: [
         {
           title: 'フロントエンド',
-          summary: '<li>Angular/Vue.js/Reactを使ったSPA開発</li>'
+          summary: '<li>Angularを使ったSPA開発</li>'
         },
         {
           title: 'バックエンド',
@@ -94,12 +94,11 @@ export default {
         },
         {
           title: 'クラウドサービスの活用',
-          summary:
-            '<li>サーバレスアーキテクチャ</li><li>Firebase</li><li>AWS</li>'
+          summary: '<>Firebase</><li>AWS</li>'
         },
         {
           title: 'スマホアプリ',
-          summary: '<li>React Native</li><li>Android</li><li>Swift</li>'
+          summary: '<li>Android</li><li>Swift</li>'
         }
       ]
     };

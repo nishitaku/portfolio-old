@@ -44,29 +44,25 @@ export default {
           type: '言語',
           data: [
             {
-              name: 'JavaScript',
-              rating: 5
-            },
-            {
               name: 'TypeScript',
               rating: 4
             },
             {
+              name: 'Swift',
+              rating: 3
+            },
+            {
               name: 'Java',
-              rating: 4
+              rating: 2
             },
             {
               name: 'C/C++',
-              rating: 3
+              rating: 2
             },
             {
               name: 'Python 3',
-              rating: 3
+              rating: 2
             },
-            {
-              name: 'Swift',
-              rating: 1
-            }
           ]
         },
         {
@@ -77,13 +73,13 @@ export default {
               rating: 4
             },
             {
+              name: 'iOS',
+              rating: 3
+            },
+            {
               name: 'Android',
               rating: 2
             },
-            {
-              name: 'iOS',
-              rating: 1
-            }
           ]
         },
         {
@@ -95,7 +91,7 @@ export default {
             },
             {
               name: 'Vue.js',
-              rating: 4
+              rating: 3
             },
             {
               name: 'React',
@@ -128,12 +124,20 @@ export default {
           type: 'CSSフレームワーク',
           data: [
             {
+              name: 'Angular Material',
+              rating: 3
+            },
+            {
+              name: 'Tailwind CSS',
+              rating: 3
+            },
+            {
               name: 'Vuetify',
-              rating: 4
+              rating: 2
             },
             {
               name: 'Bulma',
-              rating: 3
+              rating: 2
             },
             {
               name: 'Buetify',
@@ -146,7 +150,7 @@ export default {
             {
               name: 'PrimeNG',
               rating: 2
-            }
+            },
           ]
         },
         {
