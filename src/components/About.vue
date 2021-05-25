@@ -94,7 +94,7 @@ export default {
         },
         {
           title: 'クラウドサービスの活用',
-          summary: '<>Firebase</><li>AWS</li>'
+          summary: '<li>Firebase</li><li>AWS</li>'
         },
         {
           title: 'スマホアプリ',
