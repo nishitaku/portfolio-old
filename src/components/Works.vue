@@ -195,24 +195,28 @@ export default {
           techs: ['Vue.js', 'Vuetify', 'LIFF', 'Firebase', 'Sesame']
         },
         {
-          title: 'ノートアプリ開発',
-          span: '2020年4月〜',
+          title: 'ノートアプリ開発(iOS)',
+          span: '2020年4月〜2021年1月',
+          summary: 'iPad向けノートアプリの開発',
+          techs: ['Swift']
+        },
+        {
+          title: '錠剤検査システムGUI開発',
+          span: '2021年2月〜2021年3月',
           summary:
-            'iPad向けノートアプリの開発。Web表示機能の開発、DevOps改善、テスト、リファクタリング',
+            '検査装置の保存した画像ファイルを検索したり、検査装置のパラメータを変更するためのWebアプリケーション',
+          techs: ['Angular 11', 'Tailwind CSS', 'Nest.js']
+        },
+        {
+          title: 'ノートアプリ開発(Web/DevOps)',
+          span: '2021年1月〜現在',
+          summary: 'ノートアプリのWeb機能の開発、DevOps改善',
           techs: [
-            'Swift',
-            'Angular 11',
+            'Angular 11/12',
             'Angular Material',
             'Amplify',
             'CodePipeline'
           ]
-        },
-        {
-          title: '錠剤検査システムGUI開発',
-          span: '2021年2月〜',
-          summary:
-            '検査装置の保存した画像ファイルを検索したり、検査装置のパラメータを変更するためのWebアプリケーション',
-          techs: ['Angular 11', 'Tailwind CSS', 'Nest.js']
         }
       ]
     };
