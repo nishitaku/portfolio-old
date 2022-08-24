@@ -217,11 +217,17 @@ export default {
           span: '2021年1月〜現在',
           summary: 'ノートアプリのWeb機能の開発、DevOps改善',
           techs: [
-            'Angular 11/12',
+            'Angular 11/12/13/14',
             'Angular Material',
             'Amplify',
             'CodePipeline',
           ],
+        },
+        {
+          title: '電子チケットシステム開発',
+          span: '2022年1月〜現在',
+          summary: '電子チケットの管理機能のフロント開発',
+          techs: ['Angular 11', 'NG-ZORRO'],
         },
       ],
     };
