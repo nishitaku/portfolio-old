@@ -37,7 +37,7 @@
 <script>
 export default {
   name: 'Skills',
-  data: function() {
+  data: function () {
     return {
       skills: [
         {
@@ -45,159 +45,159 @@ export default {
           data: [
             {
               name: 'TypeScript',
-              rating: 4
+              rating: 4,
             },
             {
               name: 'Swift',
-              rating: 3
+              rating: 3,
             },
             {
               name: 'Java',
-              rating: 2
+              rating: 2,
             },
             {
               name: 'C/C++',
-              rating: 2
+              rating: 2,
             },
             {
               name: 'Python 3',
-              rating: 2
+              rating: 2,
             },
-          ]
+          ],
         },
         {
           type: 'プラットフォーム',
           data: [
             {
               name: 'Web',
-              rating: 4
+              rating: 4,
             },
             {
               name: 'iOS',
-              rating: 3
+              rating: 3,
             },
             {
               name: 'Android',
-              rating: 2
+              rating: 2,
             },
-          ]
+          ],
         },
         {
           type: 'フロントエンドフレームワーク',
           data: [
             {
               name: 'Angular',
-              rating: 5
+              rating: 5,
             },
             {
               name: 'Vue.js',
-              rating: 3
+              rating: 3,
             },
             {
               name: 'React',
-              rating: 2
-            }
-          ]
+              rating: 2,
+            },
+          ],
         },
         {
           type: 'Webアプリケーションフレームワーク',
           data: [
             {
               name: 'Express',
-              rating: 4
+              rating: 4,
             },
             {
               name: 'Nest.js',
-              rating: 4
+              rating: 4,
             },
             {
               name: 'Django',
-              rating: 2
+              rating: 2,
             },
             {
               name: 'Flask',
-              rating: 2
-            }
-          ]
+              rating: 2,
+            },
+          ],
         },
         {
           type: 'CSSフレームワーク',
           data: [
             {
               name: 'Angular Material',
-              rating: 3
+              rating: 3,
             },
             {
               name: 'Tailwind CSS',
-              rating: 3
+              rating: 3,
             },
             {
               name: 'Vuetify',
-              rating: 2
+              rating: 2,
             },
             {
               name: 'Bulma',
-              rating: 2
+              rating: 2,
             },
             {
               name: 'Buetify',
-              rating: 2
+              rating: 2,
             },
             {
               name: 'Material-UI',
-              rating: 2
+              rating: 2,
             },
             {
               name: 'PrimeNG',
-              rating: 2
+              rating: 2,
             },
-          ]
+          ],
         },
         {
           type: 'クラウドサービス',
           data: [
             {
               name: 'Firebase',
-              rating: 4
+              rating: 4,
             },
             {
               name: 'AWS',
-              rating: 3
+              rating: 3,
             },
             {
               name: 'IBM Cloud',
-              rating: 2
+              rating: 2,
             },
             {
               name: 'Twilio',
-              rating: 2
-            }
-          ]
-        }
+              rating: 2,
+            },
+          ],
+        },
       ],
       certifications: [
         {
           name: '応用情報技術者',
-          date: '2011年4月'
+          date: '2011年4月',
         },
         {
           name: 'セキュリティスペシャリスト',
-          date: '2012年10月'
+          date: '2012年10月',
         },
         {
           name: 'データベーススペシャリスト',
-          date: '2014年4月'
+          date: '2014年4月',
         },
         {
           name: 'ネットワークスペシャリスト',
-          date: '2015年10月'
+          date: '2015年10月',
         },
         {
           name: '銀行業務検定 外為3級',
-          date: '2015年3月'
-        }
-      ]
+          date: '2015年3月',
+        },
+      ],
     };
-  }
+  },
 };
 </script>

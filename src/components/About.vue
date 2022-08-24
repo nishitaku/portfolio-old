@@ -63,46 +63,46 @@
 <script>
 export default {
   name: 'About',
-  data: function() {
+  data: function () {
     return {
       profiles: [
         {
           name: '名前',
-          value: 'nishitaku'
+          value: 'nishitaku',
         },
         {
           name: '職業',
-          value: 'フリーランスエンジニア'
+          value: 'フリーランスエンジニア',
         },
         {
           name: '拠点',
-          value: '岐阜'
+          value: '岐阜',
         },
         {
           name: '学歴',
-          value: '神戸大学大学院'
-        }
+          value: '神戸大学大学院',
+        },
       ],
       specialties: [
         {
           title: 'フロントエンド',
-          summary: '<li>Angularを使ったSPA開発</li>'
+          summary: '<li>Angularを使ったSPA開発</li>',
         },
         {
           title: 'バックエンド',
-          summary: '<li>業務ロジックの設計、開発</li><li>DB設計</li>'
+          summary: '<li>業務ロジックの設計、開発</li><li>DB設計</li>',
         },
         {
           title: 'クラウドサービスの活用',
-          summary: '<li>Firebase</li><li>AWS</li>'
+          summary: '<li>Firebase</li><li>AWS</li>',
         },
         {
           title: 'スマホアプリ',
-          summary: '<li>Android</li><li>Swift</li>'
-        }
-      ]
+          summary: '<li>Android</li><li>Swift</li>',
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 

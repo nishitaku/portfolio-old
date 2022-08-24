@@ -48,12 +48,12 @@
 <script>
 export default {
   name: 'Works',
-  data: function() {
+  data: function () {
     return {
       works: [
         {
           title: '株式会社日立製作所に入社',
-          span: '2011年4月'
+          span: '2011年4月',
         },
         {
           title: 'メガバンク勘定系システム開発',
@@ -62,150 +62,155 @@ export default {
             '要件定義から参画した巨大プロジェクト。準備作業から設計、実装、テストまで一通り経験。',
           items: [
             {
-              text: '手順書及び各種基準書の整備'
+              text: '手順書及び各種基準書の整備',
             },
             {
               text: 'ツール開発',
-              techs: ['C#', 'VBA', 'PostgreSQL']
+              techs: ['C#', 'VBA', 'PostgreSQL'],
             },
             {
               text: '共通フレームワークの開発',
-              techs: ['Java', 'Oracle']
+              techs: ['Java', 'Oracle'],
             },
             {
-              text: '結合テスト管理'
-            }
-          ]
+              text: '結合テスト管理',
+            },
+          ],
         },
         {
           title: 'メガバンク送金システム開発',
           span: '2016年3月〜2016年10月',
           summary:
             '支援のため参画した巨大プロジェクトパート2。開発はバックエンドを少し。主に結合テスト管理を担当。',
-          techs: ['Java']
+          techs: ['Java'],
         },
         {
           title: '独立してフリーランスに',
-          span: '2016年11月'
+          span: '2016年11月',
         },
         {
           title: 'カラオケ機器開発',
           span: '2016年11月〜2018年3月',
           summary:
             '旧機種の機能追加、新機種の開発、生産工程及び市場不具合の調査、修正を担当',
-          techs: ['Android 2.1', 'Android 4.4', 'C', 'JavaScript']
+          techs: ['Android 2.1', 'Android 4.4', 'C', 'JavaScript'],
         },
         {
           title: '電力需要予測エンジン開発',
           span: '2018年5月〜2018年6月',
           summary: '過去の需要量や気象データを元に、LSTMでモデル作成',
-          techs: ['Python 3', 'Keras']
+          techs: ['Python 3', 'Keras'],
         },
         {
           title: '印刷テスト自動化',
           span: '2018年4月〜2018年7月',
           summary: 'iOS、Androidからの印刷テストをAppiumで自動化',
-          techs: ['Java', 'Python 3', 'Appium']
+          techs: ['Java', 'Python 3', 'Appium'],
         },
         {
           title: 'Google Assistant 印刷アプリ開発',
           span: '2018年7月〜2018年10月',
           summary:
             'Google AssistantからGoogle Driveに保存したファイルを印刷するVUIアプリケーション',
-          techs: ['Directflow', 'Actions on Google', 'Express', 'MongoDB']
+          techs: ['Directflow', 'Actions on Google', 'Express', 'MongoDB'],
         },
         {
           title: '脆弱性情報チェックシステム開発',
           span: '2018年9月〜2018年12月',
           summary:
             'NVD及びJVNが提供する脆弱性情報データベースを元に、関連する脆弱性情報を取得するWebアプリケーション',
-          techs: ['Python 3', 'Django', 'JavaScript']
+          techs: ['Python 3', 'Django', 'JavaScript'],
         },
         {
           title: 'Web会議システムクラウド移行',
           span: '2018年10月〜2018年12月',
           summary: 'オンデマンドをAWSへ移行。DBサーバの構築を主に担当',
-          techs: ['SQL Server', 'WSFC']
+          techs: ['SQL Server', 'WSFC'],
         },
         {
           title: '旅行LINEアプリ開発',
           span: '2018年10月〜2018年10月',
           summary:
             'ハッカソン向けに開発。LINEグループで旅行計画を共有するLIFFアプリケーション',
-          techs: ['LIFF', 'Javascript', 'Python3', 'Flask']
+          techs: ['LIFF', 'Javascript', 'Python3', 'Flask'],
         },
         {
           title: 'トライアスロン目標設定アプリ開発',
           span: '2018年11月〜2019年11月',
           summary: 'iOS/Androidアプリ。設計から開発、リリース作業まで担当',
           link: true,
-          techs: ['React Native', 'Expo']
+          techs: ['React Native', 'Expo'],
         },
         {
           title: '通信販売基幹システム開発',
           span: '2019年1月〜2019年6月',
           summary:
             '楽天、Yahoo!ショッピングなどのショッピングサイトの注文情報、在庫情報を管理するWebアプリケーション',
-          techs: ['Angular 7', 'Bulma', 'Nest.js', 'MongoDB', 'GCP', 'Docker']
+          techs: ['Angular 7', 'Bulma', 'Nest.js', 'MongoDB', 'GCP', 'Docker'],
         },
         {
           title: '木材検査システムGUI開発',
           span: '2019年7月〜2020年2月',
           summary:
             '既存のシステムが保存した木材画像を表示したり、検査シミュレーションするためのWebアプリケーション',
-          techs: ['Angular 8', 'Express', 'MongoDB', 'Docker']
+          techs: ['Angular 8', 'Express', 'MongoDB', 'Docker'],
         },
         {
           title: 'カラオケ機器開発',
           span: '2019年10月〜2020年1月',
           summary: '既存機種の機能追加',
-          techs: ['C', 'JavaScript', 'Android 2.1']
+          techs: ['C', 'JavaScript', 'Android 2.1'],
         },
         {
           title: 'カラオケ電源制御アプリGUI開発',
           span: '2019年12月〜2020年1月',
           summary: 'カラオケ機器の電源ON/OFFを管理するWebアプリケーション',
-          techs: ['Vue.js', 'Buetify', 'Java']
+          techs: ['Vue.js', 'Buetify', 'Java'],
         },
         {
           title: 'カードゲームシステム開発',
           span: '2020年1月〜2020年2月',
           summary:
             '社内ハッカソン向けに開発。手札と場のシームレスなカード移動を、Firestoreを使って実現',
-          techs: ['React', 'Material-UI', 'Firebase']
+          techs: ['React', 'Material-UI', 'Firebase'],
         },
         {
           title: 'IoTファイル管理システム開発',
           span: '2020年2月〜2020年3月',
           summary: 'IoT機器から取得したデータをAWS S3に保存、Webで管理する',
-          techs: ['Angular 9', 'PrimeNG', 'Nest.js', 'S3', 'DynamoDB', 'Nginx']
+          techs: ['Angular 9', 'PrimeNG', 'Nest.js', 'S3', 'DynamoDB', 'Nginx'],
         },
         {
           title: 'そっくりグランパス開発',
           span: '2020年2月〜2020年2月',
           summary:
             'One Japan Hackathon向けに開発。名古屋グランパスの選手とのそっくり度を判定するLINEアプリ',
-          techs: ['LINE', 'Twilio Functions', 'IBM Cloud', 'Visual Recognition']
+          techs: [
+            'LINE',
+            'Twilio Functions',
+            'IBM Cloud',
+            'Visual Recognition',
+          ],
         },
         {
           title: 'カラオケLINE予約アプリ開発',
           span: '2020年1月〜2020年3月',
           summary:
             'カラオケ店舗の空室検索、予約するLINEアプリケーション。Sesameによるドア開閉も試作',
-          techs: ['Vue.js', 'Vuetify', 'LIFF', 'Firebase', 'Sesame']
+          techs: ['Vue.js', 'Vuetify', 'LIFF', 'Firebase', 'Sesame'],
         },
         {
           title: 'ノートアプリ開発(iOS)',
           span: '2020年4月〜2021年1月',
           summary: 'iPad向けノートアプリの開発',
-          techs: ['Swift']
+          techs: ['Swift'],
         },
         {
           title: '錠剤検査システムGUI開発',
           span: '2021年2月〜2021年3月',
           summary:
             '検査装置の保存した画像ファイルを検索したり、検査装置のパラメータを変更するためのWebアプリケーション',
-          techs: ['Angular 11', 'Tailwind CSS', 'Nest.js']
+          techs: ['Angular 11', 'Tailwind CSS', 'Nest.js'],
         },
         {
           title: 'ノートアプリ開発(Web/DevOps)',
@@ -215,17 +220,17 @@ export default {
             'Angular 11/12',
             'Angular Material',
             'Amplify',
-            'CodePipeline'
-          ]
-        }
-      ]
+            'CodePipeline',
+          ],
+        },
+      ],
     };
   },
   computed: {
     isMobile() {
       const mobileBreakpoints = ['xs', 'sm'];
-      return mobileBreakpoints.some(e => this.$vuetify.breakpoint.name === e);
-    }
-  }
+      return mobileBreakpoints.some((e) => this.$vuetify.breakpoint.name === e);
+    },
+  },
 };
 </script>
